@@ -131,23 +131,24 @@
 								</div>
 								<div class="inner columns divided">
 									<div class="span-3-25">
-										<form method="post" action="#">
+										<!-- Netlify Form Integration -->
+										<form name="contact" method="POST" data-netlify="true">
 											<div class="fields">
 												<div class="field half">
 													<label for="name">Name</label>
-													<input type="text" name="name" id="name" />
+													<input type="text" name="name" id="name" required />
 												</div>
 												<div class="field half">
 													<label for="email">Email</label>
-													<input type="email" name="email" id="email" />
+													<input type="email" name="email" id="email" required />
 												</div>
 												<div class="field">
 													<label for="message">Message</label>
-													<textarea name="message" id="message" rows="4"></textarea>
+													<textarea name="message" id="message" rows="4" required></textarea>
 												</div>
 											</div>
 											<ul class="actions">
-												<li><input type="submit" value="Send Message" class="button primary" /></li>
+												<li><button type="submit" class="button primary">Send</button></li>
 											</ul>
 										</form>
 									</div>
@@ -177,4 +178,102 @@
 			<script src="assets/js/main.js"></script>
 
 	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Success Driven Insights</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+<body class="is-preload">
+
+    <!-- Page Wrapper -->
+    <div id="page-wrapper">
+
+        <!-- Wrapper -->
+        <div id="wrapper">
+
+            <!-- Other sections of your page -->
+
+            <!-- Panel -->
+            <section class="panel color4-alt">
+                <div class="intro color4">
+                    <h2 class="major">Contact:<br>Get in Touch:</h2>
+                    <p>I'd love to hear from you! Whether it's a question, collaboration opportunity, or just a chat, feel free to reach out.</p>
+                    <br>
+                    <br>
+                    <h2 class="major">Follow Me:</h2>
+                    <p>You can also connect with me on <a href="https://ig.me/j/Aba44v4w6Y4AooJg/"><strong>social media</strong></a> to stay updated with my latest projects and insights.</p>
+                </div>
+                <div class="inner columns divided">
+                    <div class="span-3-25">
+                        <!-- Netlify Form Integration -->
+                        <form name="contact" method="POST" data-netlify="true">
+                            <div class="fields">
+                                <div class="field half">
+                                    <label for="name">Name</label>
+                                    <input type="text" name="name" id="name" required />
+                                </div>
+                                <div class="field half">
+                                    <label for="email">Email</label>
+                                    <input type="email" name="email" id="email" required />
+                                </div>
+                                <div class="field">
+                                    <label for="message">Message</label>
+                                    <textarea name="message" id="message" rows="4" required></textarea>
+                                </div>
+                            </div>
+                            <ul class="actions">
+                                <li><button type="submit" class="button primary">Send</button></li>
+                            </ul>
+                        </form>
+                    </div>
+                    <div class="span-1-5">
+                        <ul class="contact-icons color1">
+                            <li class="icon brands fa-twitter"><a href="#">Twitter</a></li>
+                            <li class="icon brands fa-facebook-f"><a href="#">Facebook</a></li>
+                            <li class="icon brands fa-instagram"><a href="https://ig.me/j/Aba44v4w6Y4AooJg/">Instagram</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Copyright -->
+            <div class="copyright">&copy; 2024 SuccessDrivenInsights</div>
+
+        </div>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
 </html>
